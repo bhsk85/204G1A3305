@@ -1,38 +1,48 @@
-# Train Schedule API
+# Bhsk Train Schedule Project
 
-This is a Node.js Express API that provides information about train schedules. It fetches data from an external API, filters the available trains, and sorts them based on criteria like price and seat availability.
+This is a project that provides information about train schedules and helps users find the best train options based on various criteria.
 
-## Getting Started
+## Backend
 
-1. Clone this repository: `git clone <repository_url>`
-2. Install dependencies: `npm install`
-3. Run the server: `npm start`
+The backend of the project is built using Node.js and Express.js. It fetches train data from a remote API, filters and sorts the data, and provides an API endpoint for the frontend to retrieve and display the information.
 
-## Endpoints
+### Prerequisites
 
-### POST /trains
-
-This endpoint retrieves and filters train data from an external API, then sorts and returns the filtered results.
-
-### GET /
-
-A simple test route to check if the server is running.
-
-## Configuration
-
-- The `API_URL` variable in `index.js` should be set to the URL of the external API that provides train data.
-- The `accessToken` variable should contain a valid access token to authenticate with the external API.
-
-## Dependencies
-
+- Node.js
 - Express.js
-- Axios
-- CORS
 
-## Running the Server
+### Installation
 
-The server will run on port 8000 by default. You can change the port by modifying the `app.listen` line in `index.js`.
+1. Clone the repository: `git clone https://github.com/your-username/bhsk-train-project.git`
+2. Navigate to the backend directory: `cd bhsk-train-project/backend`
+3. Install dependencies: `npm install`
+4. Start the backend server: `node index.js`
 
-## Disclaimer
+## Frontend
 
-This code is provided as a starting point and may need further enhancements for production use. Make sure to handle errors, improve security, and adapt the code to your specific needs.
+The frontend of the project is built using React.js. It consumes the API provided by the backend to display a list of train schedules and allows users to find the best train options based on price, available seats, and departure time.
+
+### Prerequisites
+
+- Node.js
+- React.js
+
+### Installation
+
+1. Navigate to the frontend directory: `cd bhsk-train-project/frontend`
+2. Install dependencies: `npm install`
+3. Start the frontend app: `npm start`
+
+## Usage
+
+1. Access the frontend app by opening a web browser and visiting `http://localhost:3000`.
+2. The app will display a list of train schedules along with their details.
+3. Use the filters and sorting options to find the best train options based on your preferences.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to add new features, feel free to open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
